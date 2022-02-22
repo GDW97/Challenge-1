@@ -1,5 +1,4 @@
-
-let labels = [
+const labels = [
 '2013',
 '2014',
 '2015',
@@ -7,7 +6,7 @@ let labels = [
 '2017',
 ];
 
-let data = {
+const data = {
     labels: labels,
     datasets: [{
         label: 'SpaceX'
@@ -17,13 +16,13 @@ let data = {
     }]
 };
 
-let config = {
+const config = {
     type: 'line',
     data: data,
     options: {}
 };
 
-let myChart = new Chart(
+const myChart = new Chart(
     document.getElementById('myChart'),
     config
     );
