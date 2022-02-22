@@ -1,11 +1,10 @@
 /*------------------------------- mobile ------------------------------- */
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@600&display=swap');
 @media only screen and (min-width: 375px){
 
 	body{
 		font-family: Roboto Mono, sans-serif;
-		background-color: #300067;
-		color:#FFFFFF;
+		background-color: white;
+		color:black;
 		padding: 0;
 		margin: 0;
 		box-sizing: border-box;
