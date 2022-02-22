@@ -1,22 +1,29 @@
-console.log('Hello World!');
 
-let myChart = document.getElementById('mychart1').getContext('2d');
+let labels = [
+'2013',
+'2014',
+'2015',
+'2016',
+'2017',
+];
 
-let hamstersAanwezig = new Chart(myChart. {
-    type:'bar',
-    data:{
-        labels:['Jan', 'feb', 'mar', 'apr', 'may', 'june'],
-        datasets:[{
-            label:'Aanstal Hamsters',
-            data:[
-            20,
-            18,
-            24,
-            12,
-            15,
-            12
-            ]
-        }]
-    },
+let data = {
+    labels: labels,
+    datasets: [{
+        label: 'SpaceX'
+        backgroundColor: 'rgb(155, 149, 32)',
+        borderColor: 'rgb(155, 149, 31)',
+        data: [39.24, 149.56, 219.31, 240.01, 213.69],
+    }]
+};
 
-});
+let config = {
+    type: 'line',
+    data: data,
+    options: {}
+};
+
+let myChart = new Chart(
+    document.getElementById('myChart'),
+    config
+    );
